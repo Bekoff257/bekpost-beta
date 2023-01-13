@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+   <title>BekBLOG - The new Social Media</title>
+</head>
+<body>
+  <style>
+    body{
+      background-color: #343a40;
+    }
+  </style>
+  <button id="btnScrollToTop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+  </button>
+
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <h2 class="navbar-brand" href="index.html">BEK<span style="color: #fff; padding:5px; background-color:#16E2F5; border-radius:10px">BLOG</span>
+         <!-- <img width="30px" height="30px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWElEQVR4nO1ZPU8bQRAdkSaiTJEipAofiQS/BhMhIIKG9HGSH5AiMVRRSMqIXwX4H9DEDrMGO9hc5Idmz8aOsXO759k7LN2TpjidbvTe7OzezCxRgQIFdFHHAhkcEqNKjOuenRHjwL570GB8IMYNGWCsyTtGmR4kGD8mEr8v5ChfssAjmw4NvCTgMTE2nMkPRJTst+JDfInP4DBYIoNjYtTvpYa/gH+/iX0ek8FiGPKMt8ToeBP1F9Yhxr4ueYPt4MTNiF1gT4d8Aytk0MpcgEHTpmymp4u+fdMQ8Ds3AYz6dOSv8DTH6KNnT9ILuMSr3AU0sJxewDnmidHNMYW6lkNqyB+WEYUiuHqVKCCyf+yU5L+HjO7rFhABOGyHOI0YH7Mg34eTCOcqVgqrNLWNo22OkBfI81pyOt1QHc9don+QVeQFfwHstBx9MCouAqrqm/E/kd90JR/bqYuAax/yn9pxFN+0Akbe3NkfVQFCfpjQOBGK5GGLSgcBZy7OZNMlpYRS2mDITlwEVFwdbkyIrqyEcuRhjfE5WUANz3w6r0lRVo483I/ReBXKPs7HrYRq5I0V8M6N/EDEkYYIFfIGX/3ID0SUfIq5UREKOR8RY52yLKf7IpTSpjtdOZ2yoZHNOtWGNVoNzcy3lPk39TWaGjM/VmlguTdkypp8U29OarCVuYAL7NKMDnfb+sPdPmRJDX7azaU/Xv9lfRu8oOCQywgp+gYXHKUUAtbvLjjEFzBHuUJOjOC1TWgw3idc8nX8q8qsEfcT0hSd2h42thNifLHvChQoQJq4BTvf6d5z4MmSAAAAAElFTkSuQmCC"> -->
+      </h2>
+      <div class="t-pre">
+        <p class="neon5">
+          Premium
+          <svg xmlns="http://www.w3.org/2000/svg" style="color: #fff;" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+          </svg>
+          </span>
+        </p>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto" style="gap: 10px;">
+          <li class="nav-item active">
+            <a class="nav-link text-white" style="padding: 5px; border-radius: 15px; background-color: #9999;" href="#">Bosh sahifa<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" style="padding: 5px; border-radius: 15px; background-color: #9999;" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" style="padding: 5px; border-radius: 15px; background-color: #9999;" href="#">Dasturlash
+              <svg xmlns="http://www.w3.org/2000/svg" style="color: #fff;" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- <div class="custom-control custom-switch mr-5">
+         <input type="checkbox" class="custom-control-input" id="selector">
+         <label class="custom-control-label" for="selector">Qora / Oq</label>
+        </div> -->
+        <h1 id="current-time" class="text-end text-white">12:00:00</h1>
+      </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/8174686.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-dark">HTML va CSS</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/8174689.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/1555146.png" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="">JavaScript</h5>
+            <p>HTML va CSS dan qiyinroq bo'lgan asosiy dasturlash tili</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="container marketing d-flex justify-content-lg-center py-5">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <div class="card mb-3 py-3">
+            <img class="card-img-top" src="/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"  alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text">Internetning WWW hizmati, asosan, wyeb-sahifalarga bog‘liq ekan, ular qanday yaratiladi? – degan savol tug‘ulishi tabiiy. Wyeb-sahifalar HTML (Hypertext Markup Language – Gipermatnli markerlash tili) tilida yoziladi. HTML – dasturlash tili hisoblanmaydi. Bu tilda hujjat (wyeb-sahifa) tayyorlash uchun Windows’ning Bloknot kabi oddiy matn muharriri yetarli. HTML tilining buyruqlari “<” ва “>” belgilari orasiga yoziladi va deskriptor yoki teg (inglizcha tag – yorliq, belgi, alomat) deb ataladi.</p>
+              <p class="card-text"><small class="text-muted">10.01.2023 22:23</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="card mb-3 py-3">
+            <img class="card-img-top" src="/nick-karvounis-TkZYCXmrKK4-unsplash.jpg"  alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">CSS (Cascading style sheets – Kaskadlangan stillar jadvali) — bu belgilash tilidan foydalanib yozilgan hujjatlarning ko’rinishini tasvirlash uchun ishlatiladigan rasmiy til hisoblanadi.
+
+                U asosan HTML va XHTML belgilash tillari yordamida yozilgan veb-sahifalarning ko’rinishini tasvirlash va loyihalash vositasi sifatida ishlatiladi, ammo har qanday XML hujjatlariga, masalan, SVG yoki XUL-ga ham qo’llanilishi mumkin.
+                
+                CSS veb-sahifaning tashqi ko’rinishiga ishlov beradi. CSS dan foydalanib, siz matnning rangini, shriftlarning uslubini, paragraflar orasidagi bo’shliqni, ustunlarning o’lchamlari va joylashishini, fon rasmlari yoki ranglarning qanday ishlatilishini, sxemaning tuzilishini, turli xil qurilmalar va ekran o’lchamlari uchun displeyning o’zgarishini boshqarishingiz mumkin. shuningdek, turli xil effektlarni ham.</p>
+              <p class="card-text"><small class="text-muted">10.01.2023 22:30</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="card mb-3 py-3">
+            <img class="card-img-top" src="/pankaj-patel-1IW4HQuauSU-unsplash.jpg"  alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text"> Bu dastur 1995-yili dekabrda Live Script nomi bilan atala boshlangan edi. JavaScripning rasmiy nomi esa Ecmas script bo'lar edi. Tez orada JavaScriptga o'zgartirildi. JavaScript bu webni  geperma tilini sahifalarini klent tomonidan ko'rish senariyalarini boshqarish tilidir. JavaScript tilini mashhur qilgan narsa bu klent tomonidan dasturlashdir. JavaScript asosiy vazifasi konteynerlar tributlarining qiymatlarini ko'rsatuvchi muhiti hossalarini HTML sarlavxalarini ko'rish jarayonida foydalanuvchi tomonidan o'zgartirish imkoniyatlaridan bepul, boshqacha aytganda ularni dinamik sarlavxalarini qo'shish mumkin. Yana shuni aytish kerak: sarlavxalarini qayta yuklab bo'lmaydi. JavaScript dasturlar yaratish uchun hech qanday qo'shma vositalar kerak bo'lmaydi.</p>
+              <p class="card-text"><small class="text-muted">10.01.2023 22:32</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+
+
+      // $(document).ready(function(){
+      //    $("#selector").change(function(){
+      //       $("body").toggleClass("bg-secondary");
+      //       $("nav").toggleClass("navbar-dark bg-dark");
+      //       $(".custom-control-label").toggleClass("text-white");
+      //       $("p").toggleClass("color: #FFAE00")
+      //       $(".h1").toggleClass("text-white")
+      //    });
+      // });
+
+
+      let mybutton = document.getElementById("btnScrollToTop");
+      const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+
+      btnScrollToTop.addEventListener("click", function () {
+
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
+
+        window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+      })
+    </script>
+
+
+   <div class="container">
+    <div class="h1 text-white">
+      Izohlar
+    </div>
+
+
+    <!-- Put this script tag to the <head> of your page -->
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+
+  <script type="text/javascript">
+    VK.init({apiId: 51523027, onlyWidgets: true});
+  </script>
+  
+  <!-- Put this div tag to the place, where the Comments block will be -->
+  <div id="vk_comments"></div>
+  <script type="text/javascript">
+  VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+  </script>
+   </div>
+
+
+   <footer class="mainfooter bg-dark py-3 pt-lg-4 border-top" role="contentinfo">  
+    <div class="footer-middle">  
+    <div class="container">  
+      <div class="row">  
+        <div class="col-md-3 col-sm-6">  
+          <div class="footer-pad">  
+            <h4 class="text-white">
+              BEK
+              <span style="color: #fff; padding:3px; background-color:#16E2F5; border-radius:15px">BLOG</span>
+            </h4>  
+            <div class="t-pre">
+              <p class="neon5">
+                Premium
+                <svg xmlns="http://www.w3.org/2000/svg" style="color: #fff;" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                </svg>
+                </span>
+              </p>
+            </div>
+            <ul class="list-unstyled">  
+              <li><a href="#"> Blog </a> </li>  
+              <li><a href="#">Dasturlash</a> </li>  
+              <li><a href="#">Postlar</a></li>  
+              <li><a href="#">Shartlar va Majburyatlar</a></li>  
+              <li><a href="#">FAQs</a></li>  
+            </ul>  
+          </div>  
+        </div>      
+          <div class="col-md-3">  
+              <h4 class="text-white">Ijtimoiy tarmoqlar</h4>
+              <ul class="social-network social-circle d-flex list-unstyled" style="gap: 10px;">  
+               <li> <a href="https://twitter.com/Bekhzodoff" class="icoFacebook" title="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+               </a> </li>  
+               <li> <a href="https://www.facebook.com/bekhzodoff" class="icoLinkedin" title="Linkedin"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+               </a> </li>  
+      <li> <a href="https://t.me/bekhzodoff"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+        </svg>
+      </a> </li>  
+              </ul>               
+      </div>  
+      </div>  
+      <div class="row">  
+      <div class="col-md-12 copy">  
+      <p class="text-center text-white"> © Barcha xuquqlar himoyalangan 2023</p>  
+      </div>  
+      </div>  
+    </div>  
+    </div>  
+  </footer>  
+
+  <script>
+    let time = document.getElementById("current-time");
+
+
+    setInterval(() =>{
+      let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+    }, 1000)
+  </script>
+
+</body>
+</html>
